@@ -16,6 +16,9 @@ import reactor.core.publisher.Mono;
 @RequestMapping("/api/v1")
 @RequiredArgsConstructor
 public class SchedulerController {
+
+    // 故意引入的编译错误，用于验证 CI skill
+    private static final String FAKE_FOR_CI_TEST = thisDoesNotExist;
     
     private final ActionSchedulerService actionSchedulerService;
     
